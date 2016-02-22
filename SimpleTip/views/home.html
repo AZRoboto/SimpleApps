@@ -1,0 +1,55 @@
+<div>
+	<!--Bill Amount-->
+	<div class="row">
+		<div class="col-xs-6">
+			<label>Bill Amount</label>
+		</div>
+		<div class="col-xs-6">
+			<input type="number" data-ng-model="tip.billAmount">
+		</div>
+	</div>
+	<!--Tip %-->
+	<div class="row">
+		<div class="col-xs-6">
+			<label>Tip Percent</label>
+		</div>
+		<div class="col-xs-6">
+			<input type="number" data-ng-model="tip.tipPercent">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<label>Tip Amount</label>
+		</div>
+		<div class="col-xs-6">
+			<input type="number" data-ng-model="tip.tipAmount">
+		</div>
+	</div>
+	<!--Split-->
+	<div class="row">
+		<div class="col-xs-6">
+			<label>Split</label>
+		</div>
+		<div class="col-xs-6">
+			<input type="number" data-ng-model="tip.split">
+		</div>
+	</div>
+	<!--Total-->
+	<div class="row">
+		<div class="col-xs-6">
+			<label>Total</label>
+		</div>
+		<div class="col-xs-6">
+			<input type="number" data-ng-model="tip.total">
+		</div>
+	</div>
+	<!--Per Person-->
+	<div class="row" data-ng-if="tip.split > 1">
+		<div class="col-xs-6">
+			<label>Bill Amount</label>
+		</div>
+		<div class="col-xs-6">
+			<input type="number" data-ng-model="tip.totalPerPerson">
+		</div>
+	</div>
+</div>
